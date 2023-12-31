@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
-        secret_key = request.form['secret_key']
+        secret_key = 'your_secret_key'
         user_id = request.form['user_id']
 
         app.secret_key = secret_key
